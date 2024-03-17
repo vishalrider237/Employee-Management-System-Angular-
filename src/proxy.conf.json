@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "https://employee-angular-spring-boot.cfapps.us10-001.hana.ondemand.com",
+    "secure": false
+  }
+}

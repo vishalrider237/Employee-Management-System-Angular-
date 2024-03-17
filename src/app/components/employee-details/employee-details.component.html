@@ -1,0 +1,33 @@
+
+<div class="container mt-5" style="padding-top: 100px">
+  <div class="card" >
+    <div class="card-body" style="background-color: bisque">
+      <h4 class="text-center mb-2">{{firstName |uppercase}} DETAILS</h4>
+      <div class="table-responsive">
+        <table class="table text-center">
+          <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <td><span>{{employee?.name}}</span></td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row">Email</th>
+            <td><span>{{employee?.email}}</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Phone Number</th>
+            <td><span >{{employee?.phone_no}}</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Address</th>
+            <td><span>{{employee?.address}}</span></td>
+          </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

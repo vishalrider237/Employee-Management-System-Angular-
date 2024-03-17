@@ -1,0 +1,35 @@
+<div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 border offset-md-3">
+        <div class="card my-3 border-0 shadow-sm" style="background-color: bisque;">
+          <div class="card-body">
+            <h3 style="text-align:center;">Create Employee</h3>
+            <form action="" (ngSubmit)="FormSubmitted($event)">
+              <div class="mt-3">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" placeholder="Enter here.." name="name" [(ngModel)]="employee.name">
+              </div>
+              <div class="mt-3">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" placeholder="Enter here.." name="email" [(ngModel)]="employee.email">
+              </div>
+              <div class="mt-3">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" placeholder="Enter here.." name="address" [(ngModel)]="employee.address">
+              </div>
+              <div class="mt-3">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" placeholder="Enter here.." name="phone" [(ngModel)]="employee.phone_no">
+              </div>
+              <div class="container mt-3 text-center">
+                <button type="submit" class="btn btn-success btn-sm">Add</button>
+                <button type="reset" class="ms-3 btn btn-danger btn-sm">Reset</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
