@@ -7,7 +7,7 @@ import {Employee} from "../model/employee";
   providedIn: 'root'
 })
 export class EmployeeService {
-   private baseURL="https://downtime.cfapps.eu10-004.hana.ondemand.com/angular/spring-boot"
+   private baseURL="https://employee-management-system-java.cfapps.us10-001.hana.ondemand.com/angular/spring-boot"
   constructor(private httpclient:HttpClient) { }
   getEmployeeList(): Observable<Employee[]>{
     return this.httpclient.get<Employee[]>(`${this.baseURL}/getAll`)
