@@ -11,9 +11,7 @@ import {EmployeeService} from "../../service/employee.service";
 export class EmployeeDetailsComponent implements OnInit {
   id:number=0
   employee:Employee|undefined
-  // @ts-ignore
-  name:string|undefined
-  firstName: string|undefined
+  firstName:string|undefined
   constructor(private activatedRoute: ActivatedRoute,private employeeService:EmployeeService) {
   }
 
@@ -22,11 +20,9 @@ export class EmployeeDetailsComponent implements OnInit {
     // @ts-ignore
     this.employee=new Employee()
     this.employeeService.getEmployeeById(this.id).subscribe((data)=>{
-      this.employee=data
-      // @ts-ignore
-      this.name=data.name
-      this.firstName=this.name.split(" ")[0]
+      this.employee=data|| undefined;
+      this.firstName=data?.name.split(" ")[0]
       console.log(data)
-    })
+    }) 
   }
 }

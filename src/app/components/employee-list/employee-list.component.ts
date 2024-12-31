@@ -21,7 +21,7 @@ export class EmployeeListComponent implements OnInit {
     this.getEmployee()
   }
   private getEmployee(){
-    this.service.getEmployeeList().subscribe((data:Employee[])=>{
+    this.service.getAllEmployees().subscribe((data:Employee[])=>{
         console.log('Fetched employees:', data);
         this.employees=data
     }
@@ -32,6 +32,7 @@ export class EmployeeListComponent implements OnInit {
 }
   deleteTodo(id:number) {
     let ans = confirm("Do you want to delete this employee?")
+    console.log(id)
     if (ans) {
       this.service.deleteEmployee(id).subscribe(data => {
         console.log(data)

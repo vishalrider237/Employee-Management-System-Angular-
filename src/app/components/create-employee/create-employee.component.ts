@@ -20,8 +20,8 @@ export class CreateEmployeeComponent {
     alert("Employee Added successfully")
   }
   saveEmployee(){
-    this.employeeService.createEmployee(this.employee).subscribe(data =>{
-        console.log(data)
+    this.employeeService.createEmployee(this.employee.name,this.employee.email,this.employee.phone_no,this.employee.address).subscribe(data =>{
+       console.log(data)
       this.goToEmployeeList()
     },
       error => console.log(error))
