@@ -1,5 +1,9 @@
 # Crud
-
+Live Deployed ,click here to see: https://employee-management-system-angular-ryxf.vercel.app
+<br>
+Backend Swagger Link all Api's-https://employee-management-system-java.cfapps.us10-001.hana.ondemand.com/swagger-ui/index.html
+<br>
+<br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
 
 ## Development server

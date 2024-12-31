@@ -8,6 +8,7 @@ import { MessageDto } from '../model/message-dto';
   providedIn: 'root'
 })
 export class EmployeeService {
+<<<<<<< HEAD
   
   constructor(private apollo: Apollo) {}
   createEmployee(
@@ -36,6 +37,12 @@ export class EmployeeService {
     }).pipe(
       map(result => result.data?.addEmployee || null)  // Handle null or undefined safely
     );
+=======
+   private baseURL="https://employee-management-system-java.cfapps.us10-001.hana.ondemand.com/angular/spring-boot"
+  constructor(private httpclient:HttpClient) { }
+  getEmployeeList(): Observable<Employee[]>{
+    return this.httpclient.get<Employee[]>(`${this.baseURL}/getAll`)
+>>>>>>> f697780644cac055aef584a08a735a5cdd7b6f0f
   }
   getAllEmployees(): Observable<Employee[]> {
     const GET_ALL_EMPLOYEES = gql`
